@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 /*
- * 描述：函数壁报
+ * 描述：函数闭包
  *
  *	closure: 参数   x int 
  * 		 返回值 func( int )( int, int )
@@ -18,13 +18,13 @@ func closure( x int ) func( int )( int, int ){
 		return func ( y int )( value , fage int ){
 			value = x + y
 			fage = 1
-			return 
+			return
 		}
 	}else {
 		return func ( y int )( value , fage int ){
 			value = x - y
 			fage = 2
-			return 
+			return
 		}
 	}
 }
