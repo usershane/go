@@ -1,0 +1,14 @@
+
+GO交叉编译
+
+GOOS ：目标系统
+	：windows
+	：linux
+	：darwin
+
+GOARCH ：CPU类型
+	：amd64
+	：386
+
+GOOS=windows GOARCH=amd64 go build
+GOOS=linux GOARCH=amd64 go build
