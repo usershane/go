@@ -13,7 +13,7 @@ func FunA(){
 }
 
 func FunB(){
-	
+
 	defer func(){
 		if err := recover(); err != nil{
 			fmt.Println("recover ")
